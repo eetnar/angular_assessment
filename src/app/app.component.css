@@ -1,0 +1,26 @@
+
+
+.titlebar {
+  margin: 0 auto;
+  /* position: fixed; */
+  background-color: white;
+  /* width: 100vw; */
+  max-width: 700px;
+  /* min-width: 600px; */
+  padding-bottom: 1.15em;
+  border-bottom: black 1px solid;
+}
+
+.main {
+  padding-top: 2.5em;
+  margin: 0 auto;
+  max-width: 700px;
+  /* min-width: 400px; */
+  /* background-color: grey; */
+}
+
+.section {
+  padding-bottom: 2.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}

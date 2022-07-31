@@ -1,0 +1,4 @@
+button[disabled], button[disabled]:hover{
+  opacity: .4;
+  cursor: not-allowed;
+}

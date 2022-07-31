@@ -1,0 +1,26 @@
+.errormsg {
+  color: red;
+}
+
+.red-invalid {
+  border-color: red;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input .label {
+  padding-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  border:1px solid #cccccc;
+  outline: none;
+}
+

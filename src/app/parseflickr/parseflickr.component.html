@@ -1,0 +1,19 @@
+<h2>Part 4: Flickr Photos</h2>
+<p>Click on the button to see where it's _______.</p>
+<button (click)="showPictures()" id="flickrpics">Show Pictures</button>
+
+<div class="pics" *ngIf="showtime">
+      <div *ngFor="let picture of imagesRetrieved">
+        <div class="singlepic" [innerHTML]="picture.description"></div>
+      </div>
+</div>
+
+
+<!-- below is to understand the format of descriptions that I get back from flickr -->
+
+<!-- <p><a href="https://www.flickr.com/people/68781431@N04/">BonCrowder</a> posted a photo:</p>
+<p><a href="https://www.flickr.com/photos/68781431@N04/33659203101/" title="TheAtSignBonCrowderStyle"><img
+      src="https://live.staticflickr.com/3942/33659203101_4d8ff70dcd_m.jpg" width="240" height="240"
+      alt="TheAtSignBonCrowderStyle" /></a></p>
+<p>A fun atsign in my fav hex colors</p> -->
+

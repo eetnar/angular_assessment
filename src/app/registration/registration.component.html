@@ -1,0 +1,14 @@
+<h2>Part 1: Register your Software</h2>
+<form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+  <app-input label="User Name" [control]="regForm.get('username')"></app-input><br/>
+  <app-input label="Password" [control]="regForm.get('password')"></app-input><br/>
+  <app-input label="User Number" [control]="regForm.get('usernumber')"></app-input><br/>
+  <app-input label="Location" [control]="regForm.get('location')"></app-input><br/>
+  <button type="submit" [disabled]="regForm.invalid">Register</button>
+</form>
+
+<!-- below is for form testing -->
+<!-- <div>Form contents: {{regForm.value | json}}</div> -->
+<!-- <div>Form is valid: {{regForm.valid}}</div> -->
+<!-- <div>Errors around name: {{regForm.controls.username.errors | json}}</div> -->
+<!-- <div>{{regForm.controls.username.errors.thirtySixDigits | json}}</div> -->

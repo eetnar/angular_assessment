@@ -1,0 +1,46 @@
+.dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 20vw;
+  width: 60vw;
+  border-radius: 5px;
+  padding: 20px;
+  z-index: 20;
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    z-index: 20;
+    background: white;
+    border-radius: 5px;
+    width: 60vw;
+    position: absolute;
+    top: 150vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+}
+
+button {
+  margin-top: 20px;
+  align-self: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+}
+

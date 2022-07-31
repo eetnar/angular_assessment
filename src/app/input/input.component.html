@@ -1,0 +1,15 @@
+<div class="input">
+  <label class="label">{{label}}:</label>
+  <input [formControl]="control" [ngClass]="{'red-invalid': formInputFail()}"/>
+  <ng-container *ngIf="formInputFail()">
+    <div class="errormsg" *ngIf="control.errors.required">This is required</div>
+    <div class="errormsg" *ngIf="control.errors.oneLower">Need at least 1 lowercase letter</div>
+    <div class="errormsg" *ngIf="control.errors.oneUpper">Need at least 1 uppercase letter</div>
+    <div class="errormsg" *ngIf="control.errors.oneNumber">Need at least 1 number</div>
+    <div class="errormsg" *ngIf="control.errors.noNonNumbers">Only numbers allowed</div>
+    <div class="errormsg" *ngIf="control.errors.thirtySixDigits">Must be exactly 36 digits</div>
+    <div class="errormsg" *ngIf="control.errors.min">Need at least 2 numbers</div>
+    <div class="errormsg" *ngIf="control.errors.minlength">Need at least 8 characters</div>
+    <div class="errormsg" *ngIf="control.errors.maxlength">Need less than 15 characters</div>
+  </ng-container>
+</div>
